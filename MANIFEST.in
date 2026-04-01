@@ -1,0 +1,6 @@
+include README.md
+include LICENSE
+include CHANGELOG.md
+recursive-include src/whenever_sqlalchemy *.py *.pyi
+recursive-include src/whenever_sqlalchemy py.typed
+recursive-include tests *.py
