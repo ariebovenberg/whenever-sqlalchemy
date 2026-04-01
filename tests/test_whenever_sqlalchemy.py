@@ -2,11 +2,9 @@ import datetime as stdlib_datetime
 from typing import Optional
 
 import pytest
-
-from whenever import Date, Instant, PlainDateTime, Time
-
 from sqlalchemy import Column, Integer, create_engine, func
 from sqlalchemy.orm import Session, declarative_base
+from whenever import Date, Instant, PlainDateTime, Time
 
 from whenever_sqlalchemy import (
     DateType,
@@ -167,7 +165,7 @@ class TestTimeType:
 _CoreBase = declarative_base()
 
 
-class _CoreModel(_CoreBase):
+class _CoreModel(_CoreBase):  # type: ignore[valid-type, misc]
     __tablename__ = "core_model"
     id = Column(Integer, primary_key=True, autoincrement=True)
     instant = Column(InstantType, nullable=True)
@@ -176,7 +174,7 @@ class _CoreModel(_CoreBase):
     time = Column(TimeType, nullable=True)
 
 
-class _ServerDefaultModel(_CoreBase):
+class _ServerDefaultModel(_CoreBase):  # type: ignore[valid-type, misc]
     __tablename__ = "server_default_model"
     id = Column(Integer, primary_key=True, autoincrement=True)
     # server_default bypasses process_bind_param;

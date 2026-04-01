@@ -34,11 +34,11 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.13"
+          python-version: "3.14"
       - name: Install dependencies
         run: |
           python -m pip install -U pip
-          pip install black isort flake8 mypy build twine
+          pip install .[dev]
       - name: Check formatting
         run: |
           black --check src/ tests/
