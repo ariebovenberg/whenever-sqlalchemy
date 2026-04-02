@@ -1,6 +1,6 @@
 [project]
 name = "whenever-sqlalchemy"
-version = "0.1.0b1"
+version = "0.1.0b2"
 authors = [
     {name = "Arie Bovenberg", email = "a.c.bovenberg@gmail.com"},
 ]
@@ -35,8 +35,8 @@ keywords = ["whenever", "sqlalchemy", "datetime", "date", "time", "orm"]
 
 [project.urls]
 Repository = "https://github.com/ariebovenberg/whenever-sqlalchemy"
-Issues = "https://github.com/ariebovenberg/whenever/issues"
-Changelog = "https://github.com/ariebovenberg/whenever/blob/main/whenever_sqlalchemy/CHANGELOG.md"
+Issues = "https://github.com/ariebovenberg/whenever-sqlalchemy/issues"
+Changelog = "https://github.com/ariebovenberg/whenever/blob/main/whenever-sqlalchemy/CHANGELOG.md"
 
 [project.optional-dependencies]
 dev = [
