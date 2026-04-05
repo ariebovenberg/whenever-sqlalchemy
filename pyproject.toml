@@ -1,6 +1,6 @@
 [project]
 name = "whenever-sqlalchemy"
-version = "0.1.0b2"
+version = "0.1.0"
 authors = [
     {name = "Arie Bovenberg", email = "a.c.bovenberg@gmail.com"},
 ]
@@ -28,7 +28,7 @@ classifiers = [
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 dependencies = [
-    "whenever>=0.10.0b1",
+    "whenever>=0.10.0",
     "sqlalchemy>=1.4",
 ]
 keywords = ["whenever", "sqlalchemy", "datetime", "date", "time", "orm"]
